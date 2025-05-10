@@ -17,18 +17,14 @@ from ..adapters import SourceResult
 from .base import BaseSynthesizer, SynthesisResult, SynthesisType
 from .prompt_engineering import PromptLibrary, PromptEvaluator
 from .context_management import ContextManager
+from .error_handling import (
+    ResearchError, ErrorCategory, ErrorSeverity,
+    classify_openai_error, classify_network_error,
+    error_tracker, fallback_manager
+)
 
 
 logger = logging.getLogger(__name__)
-
-
-class APIError(Exception):
-    """Exception raised for API errors."""
-    def __init__(self, message: str, status_code: Optional[int] = None, response_text: Optional[str] = None):
-        self.message = message
-        self.status_code = status_code
-        self.response_text = response_text
-        super().__init__(self.message)
 
 
 class GPT4Synthesizer(BaseSynthesizer):
@@ -74,7 +70,10 @@ class GPT4Synthesizer(BaseSynthesizer):
         self.timeout = timeout
         self.max_retries = max_retries
         self.retry_delay = retry_delay
-        self.fallback_model = fallback_model
+        
+        # Initialize error handling
+        if fallback_model and fallback_model != self.model:
+            fallback_manager.register_fallback_model(fallback_model, priority=1)
         
         # Initialize prompt library and evaluator
         self.prompt_library = PromptLibrary(templates_dir=prompt_templates_dir)
@@ -104,10 +103,18 @@ class GPT4Synthesizer(BaseSynthesizer):
             Synthesis result or None if synthesis fails
             
         Raises:
-            ValueError: If API key is missing or synthesis type is invalid
+            ResearchError: If an error occurs during synthesis
         """
+        # Validate inputs
         if not self.api_key:
-            raise ValueError("OpenAI API key is required for GPT-4 synthesis")
+            error = ResearchError(
+                "API key is required for GPT-4 synthesis",
+                error_category=ErrorCategory.AUTHENTICATION,
+                error_severity=ErrorSeverity.HIGH,
+                is_retryable=False
+            )
+            error_tracker.record_error(error)
+            raise error
         
         if not source_results:
             logger.warning("No source results provided for synthesis")
@@ -124,6 +131,14 @@ class GPT4Synthesizer(BaseSynthesizer):
             system_prompt = prompts["system_prompt"]
             user_prompt = prompts["user_prompt"]
         except ValueError as e:
+            error = ResearchError(
+                f"Error creating prompts: {e}",
+                error_category=ErrorCategory.INPUT,
+                error_severity=ErrorSeverity.MEDIUM,
+                is_retryable=False,
+                original_exception=e
+            )
+            error_tracker.record_error(error)
             logger.error(f"Error creating prompts: {e}")
             return None
         
@@ -132,6 +147,13 @@ class GPT4Synthesizer(BaseSynthesizer):
         
         # Add system prompt to context
         if not self.context_manager.add_system_prompt(system_prompt):
+            error = ResearchError(
+                "System prompt too large for context window",
+                error_category=ErrorCategory.CONTEXT,
+                error_severity=ErrorSeverity.MEDIUM,
+                is_retryable=False
+            )
+            error_tracker.record_error(error)
             logger.error("System prompt too large for context window")
             return None
         
@@ -153,6 +175,13 @@ class GPT4Synthesizer(BaseSynthesizer):
         messages = self.context_manager.build_messages()
         
         if not messages:
+            error = ResearchError(
+                "No messages to send to API",
+                error_category=ErrorCategory.CONTEXT,
+                error_severity=ErrorSeverity.MEDIUM,
+                is_retryable=False
+            )
+            error_tracker.record_error(error)
             logger.error("No messages to send to API")
             return None
         
@@ -161,42 +190,52 @@ class GPT4Synthesizer(BaseSynthesizer):
             response_text = await self._call_gpt4_api_with_retry_and_context(messages)
             if not response_text:
                 return None
-        except APIError as e:
-            logger.error(f"Failed to call GPT-4 API after retries: {e}")
+        except ResearchError as e:
+            logger.error(f"Failed to call GPT-4 API: {e.get_user_message()}")
             
-            # Try fallback model if available
-            if self.fallback_model and self.fallback_model != self.model:
-                logger.info(f"Attempting to use fallback model: {self.fallback_model}")
-                try:
-                    original_model = self.model
-                    self.model = self.fallback_model
-                    
-                    # Update context manager's model
-                    self.context_manager = ContextManager(
-                        model=self.model,
-                        response_tokens=self.max_tokens,
-                        compression_level=self.context_manager.compression_level
-                    )
-                    
-                    # Set up context again with fallback model
-                    self.context_manager.clear_context()
-                    self.context_manager.add_system_prompt(system_prompt)
-                    self.context_manager.add_sources(source_results, max_tokens=int(self.context_manager.token_limit * 0.7))
-                    self.context_manager.add_user_input(query_text, priority=90)
-                    
-                    # Call API with fallback model
-                    messages = self.context_manager.build_messages()
-                    response_text = await self._call_gpt4_api_with_retry_and_context(messages)
-                    
-                    if not response_text:
-                        return None
+            # Try fallback models if available
+            fallback_models = fallback_manager.get_fallback_models()
+            if fallback_models:
+                for fallback_model in fallback_models:
+                    logger.info(f"Attempting to use fallback model: {fallback_model}")
+                    try:
+                        original_model = self.model
+                        self.model = fallback_model
                         
-                    self.model = original_model  # Restore original model
-                except APIError as fallback_error:
-                    logger.error(f"Fallback model also failed: {fallback_error}")
+                        # Update context manager's model
+                        self.context_manager = ContextManager(
+                            model=self.model,
+                            response_tokens=self.max_tokens,
+                            compression_level=self.context_manager.compression_level
+                        )
+                        
+                        # Set up context again with fallback model
+                        self.context_manager.clear_context()
+                        self.context_manager.add_system_prompt(system_prompt)
+                        self.context_manager.add_sources(source_results, max_tokens=int(self.context_manager.token_limit * 0.7))
+                        self.context_manager.add_user_input(query_text, priority=90)
+                        
+                        # Call API with fallback model
+                        messages = self.context_manager.build_messages()
+                        response_text = await self._call_gpt4_api_with_retry_and_context(messages)
+                        
+                        if response_text:
+                            # Restore original model and log success
+                            logger.info(f"Successfully used fallback model: {fallback_model}")
+                            self.model = original_model
+                            break
+                        
+                    except ResearchError as fallback_error:
+                        logger.error(f"Fallback model {fallback_model} also failed: {fallback_error.get_user_message()}")
+                        self.model = original_model  # Restore original model
+                
+                # If we still don't have a response after trying all fallbacks
+                if not response_text:
                     return None
             else:
-                return None
+                # Try to handle the error with registered handlers
+                if not fallback_manager.handle_error(e):
+                    return None
         
         # Parse the response
         synthesis_result = self._parse_response(
@@ -245,10 +284,18 @@ class GPT4Synthesizer(BaseSynthesizer):
             Synthesis result or None if synthesis fails
             
         Raises:
-            ValueError: If API key is missing
+            ResearchError: If an error occurs during synthesis
         """
+        # Validate inputs
         if not self.api_key:
-            raise ValueError("OpenAI API key is required for GPT-4 synthesis")
+            error = ResearchError(
+                "API key is required for GPT-4 synthesis",
+                error_category=ErrorCategory.AUTHENTICATION,
+                error_severity=ErrorSeverity.HIGH,
+                is_retryable=False
+            )
+            error_tracker.record_error(error)
+            raise error
         
         if not source_results:
             logger.warning("No source results provided for synthesis")
@@ -266,6 +313,14 @@ class GPT4Synthesizer(BaseSynthesizer):
             system_prompt = prompts["system_prompt"]
             user_prompt = prompts["user_prompt"]
         except ValueError as e:
+            error = ResearchError(
+                f"Error creating prompts: {e}",
+                error_category=ErrorCategory.INPUT,
+                error_severity=ErrorSeverity.MEDIUM,
+                is_retryable=False,
+                original_exception=e
+            )
+            error_tracker.record_error(error)
             logger.error(f"Error creating prompts: {e}")
             return None
         
@@ -274,6 +329,13 @@ class GPT4Synthesizer(BaseSynthesizer):
         
         # Add system prompt to context
         if not self.context_manager.add_system_prompt(system_prompt):
+            error = ResearchError(
+                "System prompt too large for context window",
+                error_category=ErrorCategory.CONTEXT,
+                error_severity=ErrorSeverity.MEDIUM,
+                is_retryable=False
+            )
+            error_tracker.record_error(error)
             logger.error("System prompt too large for context window")
             return None
         
@@ -295,6 +357,13 @@ class GPT4Synthesizer(BaseSynthesizer):
         messages = self.context_manager.build_messages()
         
         if not messages:
+            error = ResearchError(
+                "No messages to send to API",
+                error_category=ErrorCategory.CONTEXT,
+                error_severity=ErrorSeverity.MEDIUM,
+                is_retryable=False
+            )
+            error_tracker.record_error(error)
             logger.error("No messages to send to API")
             return None
         
@@ -303,42 +372,52 @@ class GPT4Synthesizer(BaseSynthesizer):
             response_text = await self._call_gpt4_api_with_retry_and_context(messages)
             if not response_text:
                 return None
-        except APIError as e:
-            logger.error(f"Failed to call GPT-4 API after retries: {e}")
+        except ResearchError as e:
+            logger.error(f"Failed to call GPT-4 API: {e.get_user_message()}")
             
-            # Try fallback model if available
-            if self.fallback_model and self.fallback_model != self.model:
-                logger.info(f"Attempting to use fallback model: {self.fallback_model}")
-                try:
-                    original_model = self.model
-                    self.model = self.fallback_model
-                    
-                    # Update context manager's model
-                    self.context_manager = ContextManager(
-                        model=self.model,
-                        response_tokens=self.max_tokens,
-                        compression_level=self.context_manager.compression_level
-                    )
-                    
-                    # Set up context again with fallback model
-                    self.context_manager.clear_context()
-                    self.context_manager.add_system_prompt(system_prompt)
-                    self.context_manager.add_sources(source_results, max_tokens=int(self.context_manager.token_limit * 0.7))
-                    self.context_manager.add_user_input(query_text, priority=90)
-                    
-                    # Call API with fallback model
-                    messages = self.context_manager.build_messages()
-                    response_text = await self._call_gpt4_api_with_retry_and_context(messages)
-                    
-                    if not response_text:
-                        return None
+            # Try fallback models if available
+            fallback_models = fallback_manager.get_fallback_models()
+            if fallback_models:
+                for fallback_model in fallback_models:
+                    logger.info(f"Attempting to use fallback model: {fallback_model}")
+                    try:
+                        original_model = self.model
+                        self.model = fallback_model
                         
-                    self.model = original_model  # Restore original model
-                except APIError as fallback_error:
-                    logger.error(f"Fallback model also failed: {fallback_error}")
+                        # Update context manager's model
+                        self.context_manager = ContextManager(
+                            model=self.model,
+                            response_tokens=self.max_tokens,
+                            compression_level=self.context_manager.compression_level
+                        )
+                        
+                        # Set up context again with fallback model
+                        self.context_manager.clear_context()
+                        self.context_manager.add_system_prompt(system_prompt)
+                        self.context_manager.add_sources(source_results, max_tokens=int(self.context_manager.token_limit * 0.7))
+                        self.context_manager.add_user_input(query_text, priority=90)
+                        
+                        # Call API with fallback model
+                        messages = self.context_manager.build_messages()
+                        response_text = await self._call_gpt4_api_with_retry_and_context(messages)
+                        
+                        if response_text:
+                            # Restore original model and log success
+                            logger.info(f"Successfully used fallback model: {fallback_model}")
+                            self.model = original_model
+                            break
+                        
+                    except ResearchError as fallback_error:
+                        logger.error(f"Fallback model {fallback_model} also failed: {fallback_error.get_user_message()}")
+                        self.model = original_model  # Restore original model
+                
+                # If we still don't have a response after trying all fallbacks
+                if not response_text:
                     return None
             else:
-                return None
+                # Try to handle the error with registered handlers
+                if not fallback_manager.handle_error(e):
+                    return None
         
         # Parse the response
         synthesis_result = self._parse_response(
@@ -396,37 +475,53 @@ class GPT4Synthesizer(BaseSynthesizer):
             Response text from the API or None if all retries fail
             
         Raises:
-            APIError: If API calls fail after all retries
+            ResearchError: If API calls fail after all retries
         """
-        last_exception = None
+        last_error = None
         
         for attempt in range(self.max_retries):
             try:
                 return await self._call_gpt4_api_with_messages(messages)
-            except Exception as e:
-                last_exception = e
+            except ResearchError as e:
+                last_error = e
                 
-                # Don't retry on invalid API key or authentication errors
-                if isinstance(e, APIError) and e.status_code in (401, 403):
-                    logger.error(f"Authentication error, not retrying: {e}")
+                # Don't retry certain error categories
+                if not e.is_retryable:
+                    error_tracker.record_error(e)
                     raise
                 
-                # Calculate delay with exponential backoff (2^attempt * base_delay)
-                delay = self.retry_delay * (2 ** attempt)
+                # Use specific retry_after if provided, otherwise calculate with exponential backoff
+                if e.retry_after:
+                    delay = e.retry_after
+                else:
+                    # Calculate delay with exponential backoff (2^attempt * base_delay)
+                    delay = self.retry_delay * (2 ** attempt)
                 
                 # Log the error and retry
                 if attempt < self.max_retries - 1:
-                    logger.warning(f"API call failed, retrying in {delay}s: {e}")
+                    logger.warning(f"API call failed, retrying in {delay}s: {e.get_user_message()}")
                     await asyncio.sleep(delay)
                 else:
-                    logger.error(f"API call failed after {self.max_retries} attempts: {e}")
+                    error_tracker.record_error(e)
+                    logger.error(f"API call failed after {self.max_retries} attempts: {e.get_user_message()}")
+            except Exception as e:
+                # Unexpected error - convert to ResearchError
+                last_error = classify_network_error(e)
+                
+                # Calculate delay with exponential backoff
+                delay = self.retry_delay * (2 ** attempt)
+                
+                # Log and retry
+                if attempt < self.max_retries - 1:
+                    logger.warning(f"Unexpected error, retrying in {delay}s: {str(e)}")
+                    await asyncio.sleep(delay)
+                else:
+                    error_tracker.record_error(last_error)
+                    logger.error(f"API call failed after {self.max_retries} attempts due to unexpected error: {str(e)}")
                     
-        # If we get here, all retries failed
-        if last_exception:
-            if isinstance(last_exception, APIError):
-                raise last_exception
-            else:
-                raise APIError(f"Failed to call GPT-4 API after {self.max_retries} attempts: {last_exception}")
+        # If we get here, all retries failed - raise the last error
+        if last_error:
+            raise last_error
         
         return None
     
@@ -441,7 +536,7 @@ class GPT4Synthesizer(BaseSynthesizer):
             The text response from the model
             
         Raises:
-            APIError: If the API request fails
+            ResearchError: If the API request fails
         """
         headers = {
             "Content-Type": "application/json",
@@ -470,11 +565,22 @@ class GPT4Synthesizer(BaseSynthesizer):
                     logger.error(f"HTTP error from GPT-4 API: {response.status_code} - {response.reason_phrase}")
                     logger.error(f"Error details: {error_detail}")
                     
-                    raise APIError(
-                        f"OpenAI API error: {response.status_code}",
+                    # Classify and raise the appropriate error
+                    error_message = f"OpenAI API error: {response.status_code}"
+                    if error_detail:
+                        try:
+                            data = json.loads(error_detail)
+                            if "error" in data and "message" in data["error"]:
+                                error_message = data["error"]["message"]
+                        except:
+                            pass
+                    
+                    error = classify_openai_error(
                         status_code=response.status_code,
+                        error_message=error_message,
                         response_text=error_detail
                     )
+                    raise error
                 
                 response_data = response.json()
                 content = response_data["choices"][0]["message"]["content"]
@@ -482,13 +588,23 @@ class GPT4Synthesizer(BaseSynthesizer):
                 
         except httpx.TimeoutException as e:
             logger.error(f"API request timed out: {e}")
-            raise APIError(f"API request timed out after {self.timeout}s")
+            error = classify_network_error(e)
+            raise error
         except httpx.RequestError as e:
             logger.error(f"HTTP request error: {e}")
-            raise APIError(f"HTTP request error: {e}")
+            error = classify_network_error(e)
+            raise error
         except Exception as e:
             logger.error(f"Unexpected error calling GPT-4 API: {e}")
-            raise APIError(f"Unexpected error: {e}")
+            if not isinstance(e, ResearchError):
+                error = ResearchError(
+                    f"Unexpected error: {e}",
+                    error_category=ErrorCategory.UNKNOWN,
+                    error_severity=ErrorSeverity.HIGH,
+                    original_exception=e
+                )
+                raise error
+            raise
     
     # Keep this method for backward compatibility
     async def _call_gpt4_api_with_retry(self, system_prompt: str, user_prompt: str) -> Optional[str]:
@@ -503,7 +619,7 @@ class GPT4Synthesizer(BaseSynthesizer):
             Response text from the API or None if all retries fail
             
         Raises:
-            APIError: If API calls fail after all retries
+            ResearchError: If API calls fail after all retries
         """
         # Set up context with system and user prompts
         self.context_manager.clear_context()
@@ -527,7 +643,7 @@ class GPT4Synthesizer(BaseSynthesizer):
             The text response from the model
             
         Raises:
-            APIError: If the API request fails
+            ResearchError: If the API request fails
         """
         # Convert prompts to messages format
         messages = [
