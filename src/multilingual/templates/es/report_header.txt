@@ -1,0 +1,4 @@
+Título del Informe: {report_title}
+Fecha: {report_date}
+Idioma: Español
+--- 

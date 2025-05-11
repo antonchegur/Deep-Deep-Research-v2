@@ -1,0 +1,307 @@
+{
+  "query": "What are the latest developments in quantum computing?",
+  "search_results": [
+    {
+      "title": "Timeline of quantum computing and communication",
+      "content": "This is a timeline of <span class=\"searchmatch\">quantum</span> <span class=\"searchmatch\">computing</span>. Stephen Wiesner invents conjugate coding 13 June \u2013 James L. Park (Washington State University, Pullman)&#039;s paper",
+      "source_name": "Wikipedia",
+      "source_type": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Timeline_of_quantum_computing_and_communication",
+      "retrieved_at": "2025-05-10T15:23:21.668447",
+      "metadata": {
+        "pageid": 191911,
+        "wordcount": 0,
+        "size": 0,
+        "is_full_content": false
+      },
+      "relevance_score": null,
+      "section_headers": [],
+      "language": "en"
+    },
+    {
+      "title": "List of quantum processors",
+      "content": "(CLOPS). These QPUs <span class=\"searchmatch\">are</span> based on <span class=\"searchmatch\">the</span> <span class=\"searchmatch\">quantum</span> circuit and <span class=\"searchmatch\">quantum</span> logic gate-based model of <span class=\"searchmatch\">computing</span>. These QPUs <span class=\"searchmatch\">are</span> based on <span class=\"searchmatch\">quantum</span> annealing, not to",
+      "source_name": "Wikipedia",
+      "source_type": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/List_of_quantum_processors",
+      "retrieved_at": "2025-05-10T15:23:21.668463",
+      "metadata": {
+        "pageid": 55569888,
+        "wordcount": 0,
+        "size": 0,
+        "is_full_content": false
+      },
+      "relevance_score": null,
+      "section_headers": [],
+      "language": "en"
+    },
+    {
+      "title": "Richard Feynman",
+      "content": "field of <span class=\"searchmatch\">quantum</span> <span class=\"searchmatch\">computing</span> and introducing <span class=\"searchmatch\">the</span> concept of nanotechnology. He held <span class=\"searchmatch\">the</span> Richard C. Tolman professorship <span class=\"searchmatch\">in</span> theoretical physics at <span class=\"searchmatch\">the</span> California",
+      "source_name": "Wikipedia",
+      "source_type": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Richard_Feynman",
+      "retrieved_at": "2025-05-10T15:23:21.668467",
+      "metadata": {
+        "pageid": 25523,
+        "wordcount": 0,
+        "size": 0,
+        "is_full_content": false
+      },
+      "relevance_score": null,
+      "section_headers": [],
+      "language": "en"
+    },
+    {
+      "title": "Microsoft Azure",
+      "content": "&quot;Microsoft&#039;s <span class=\"searchmatch\">quantum</span> cloud <span class=\"searchmatch\">computing</span> plans take another big step forward&quot;. ZDNet. Retrieved September 4, 2024. Gillis, Alexander. &quot;<span class=\"searchmatch\">What</span> is Azure <span class=\"searchmatch\">Quantum</span>?&quot;. Tech",
+      "source_name": "Wikipedia",
+      "source_type": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Microsoft_Azure",
+      "retrieved_at": "2025-05-10T15:23:21.668470",
+      "metadata": {
+        "pageid": 19961416,
+        "wordcount": 0,
+        "size": 0,
+        "is_full_content": false
+      },
+      "relevance_score": null,
+      "section_headers": [],
+      "language": "en"
+    },
+    {
+      "title": "Sridhar Tayur",
+      "content": "Management, and <span class=\"searchmatch\">Quantum</span> <span class=\"searchmatch\">Computing</span>. He describes his own work as &quot;research, industrial implementation, software entrepreneurship, investing <span class=\"searchmatch\">in</span> start-ups and",
+      "source_name": "Wikipedia",
+      "source_type": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sridhar_Tayur",
+      "retrieved_at": "2025-05-10T15:23:21.668473",
+      "metadata": {
+        "pageid": 36021710,
+        "wordcount": 0,
+        "size": 0,
+        "is_full_content": false
+      },
+      "relevance_score": null,
+      "section_headers": [],
+      "language": "en"
+    },
+    {
+      "title": "Blockchain Technologies for Smart Energy Systems: Fundamentals,\n  Challenges and Solutions",
+      "content": "In this paper, we discuss the integration of blockchain in smart energy\nsystems. We present various blockchain technology solutions, review important\nblockchain platforms, and several blockchain based smart energy projects in\ndifferent smart energy domains. The majority of blockchain platforms with\nembedded combination of blockchain technology solutions are computing- and\nresource- intensive, and hence not entirely suitable for smart energy\napplications. We consider the requirements of smart energy systems and\naccordingly identify appropriate blockchain technology solutions for smart\nenergy applications. Our analysis can help in the development of flexible\nblockchain platforms for smart energy systems.",
+      "source_name": "arXiv",
+      "source_type": "academic",
+      "url": "http://arxiv.org/pdf/1909.02914v1",
+      "retrieved_at": "2025-05-10T15:23:21.912101",
+      "metadata": {
+        "id": "1909.02914v1",
+        "authors": [
+          "Naveed UL Hassan",
+          "Chau Yuen",
+          "Dusit Niyato"
+        ],
+        "category": "cs.CY",
+        "categories": [
+          "cs.CY",
+          "cs.CR"
+        ],
+        "published": "2019-09-06T13:55:14Z",
+        "links": {
+          "pdf": "http://arxiv.org/pdf/1909.02914v1"
+        },
+        "is_full_content": false
+      },
+      "relevance_score": null,
+      "section_headers": [],
+      "language": "en"
+    },
+    {
+      "title": "Observation of Yu-Shiba-Rusinov states in superconducting graphene",
+      "content": "When magnetic atoms are inserted inside a superconductor, the superconducting\norder is locally depleted as a result of the antagonistic nature of magnetism\nand superconductivity1. Thereby, distinctive spectral features, known as\nYu-Shiba-Rusinov states, appear inside the superconducting gap2-4. The search\nfor Yu-Shiba-Rusinov states in different materials is intense, as they can be\nused as building blocks to promote Majorana modes5 suitable for topological\nquantum computing6. Here we report the first realization of Yu-Shiba-Rusinov\nstates in graphene, a non-superconducting 2D material, and without the\nparticipation of magnetic atoms. We induce superconductivity in graphene by\nproximity effect7-9 brought by adsorbing nanometer scale superconducting Pb\nislands. Using scanning tunneling microscopy and spectroscopy we measure the\nsuperconducting proximity gap in graphene and we visualize Yu-Shiba-Rusinov\nstates in graphene grain boundaries. Our results reveal the very special nature\nof those Yu-Shiba-Rusinov states, which extends more than 20 nm away from the\ngrain boundaries. These observations provide the long sought experimental\nconfirmation that graphene grain boundaries host local magnetic moments10-14\nand constitute the first observation of Yu-Shiba-Rusinov states in a chemically\npure system.",
+      "source_name": "arXiv",
+      "source_type": "academic",
+      "url": "http://arxiv.org/pdf/2010.10377v1",
+      "retrieved_at": "2025-05-10T15:23:21.912379",
+      "metadata": {
+        "id": "2010.10377v1",
+        "authors": [
+          "E. Cort\u00e9s-del R\u00edo",
+          "J. L. Lado",
+          "V. Cherkez",
+          "P. Mallet",
+          "J-Y. Veuillen",
+          "J. C. Cuevas",
+          "J. M. G\u00f3mez-Rodr\u00edguez",
+          "J. Fern\u00e1ndez-Rossier",
+          "I. Brihuega"
+        ],
+        "category": "cond-mat.mes-hall",
+        "categories": [
+          "cond-mat.mes-hall",
+          "cond-mat.supr-con"
+        ],
+        "published": "2020-10-20T15:37:15Z",
+        "links": {
+          "pdf": "http://arxiv.org/pdf/2010.10377v1"
+        },
+        "is_full_content": false
+      },
+      "relevance_score": null,
+      "section_headers": [],
+      "language": "en"
+    },
+    {
+      "title": "Representation and Interpretation in Artificial and Natural Computing",
+      "content": "Artificial computing machinery transforms representations through an\nobjective process, to be interpreted subjectively by humans, so the machine and\nthe interpreter are different entities, but in the putative natural computing\nboth processes are performed by the same agent. The method or process that\ntransforms a representation is called here \\emph{the mode of computing}. The\nmode used by digital computers is the algorithmic one, but there are others,\nsuch as quantum computers and diverse forms of non-conventional computing, and\nthere is an open-ended set of representational formats and modes that could be\nused in artificial and natural computing. A mode based on a notion of computing\ndifferent from Turing's may perform feats beyond what the Turing Machine does\nbut the modes would not be of the same kind and could not be compared. For a\nmode of computing to be more powerful than the algorithmic one, it ought to\ncompute functions lacking an effective algorithm, and Church Thesis would not\nhold. Here, a thought experiment including a computational demon using a\nhypothetical mode for such an effect is presented. If there is natural\ncomputing, there is a mode of natural computing whose properties may be causal\nto the phenomenological experience. Discovering it would come with solving the\nhard problem of consciousness; but if it turns out that such a mode does not\nexist, there is no such thing as natural computing, and the mind is not a\ncomputational process.",
+      "source_name": "arXiv",
+      "source_type": "academic",
+      "url": "http://arxiv.org/pdf/2502.10383v1",
+      "retrieved_at": "2025-05-10T15:23:21.912481",
+      "metadata": {
+        "id": "2502.10383v1",
+        "authors": [
+          "Luis A. Pineda"
+        ],
+        "category": "cs.AI",
+        "categories": [
+          "cs.AI",
+          "F.0"
+        ],
+        "published": "2025-02-14T18:57:29Z",
+        "links": {
+          "pdf": "http://arxiv.org/pdf/2502.10383v1"
+        },
+        "is_full_content": false
+      },
+      "relevance_score": null,
+      "section_headers": [],
+      "language": "en"
+    },
+    {
+      "title": "Fast and energy-efficient non-volatile III-V-on-silicon photonic phase\n  shifter based on memristors",
+      "content": "Silicon photonics has evolved from lab research to commercial products in the\npast decade as it plays an increasingly crucial role in data communication for\nnext-generation data centers and high performance computing1. Recently,\nprogrammable silicon photonics has also found new applications in quantum2 and\nclassical 3 information processing. A key component of programmable silicon\nphotonic integrated circuits (PICs) is the phase shifter, traditionally\nrealized via the thermo-optic or plasma dispersion effect which are weak,\nvolatile, and power hungry. A non-volatile phase shifter can circumvent these\nlimitations by requiring zero power to maintain the switched phases. Previously\nnon-volatile phase modulation was achieved via phase-change4 or ferroelectric\nmaterials5, but the switching energy remains high (pico to nano joules) and the\nspeed is slow (micro to milli seconds). Here, we report a non-volatile\nIII-V-on-silicon photonic phase shifter based on HfO2 memristor with sub-pJ\nswitching energy (~400fJ), representing over an order of magnitude improvement\nin energy efficiency compared to the state of the art. The non-volatile phase\nshifter can be switched reversibly using a single 100ns pulse and exhibits an\nexcellent endurance over 800 cycles. This technology can enable future\nenergy-efficient programmable PICs for data centers, optical neural networks,\nand quantum information processing.",
+      "source_name": "arXiv",
+      "source_type": "academic",
+      "url": "http://arxiv.org/pdf/2305.14271v1",
+      "retrieved_at": "2025-05-10T15:23:21.912710",
+      "metadata": {
+        "id": "2305.14271v1",
+        "authors": [
+          "Zhuoran Fang",
+          "Bassem Tossoun",
+          "Antoine Descos",
+          "Di Liang",
+          "Xue Huang",
+          "Geza Kurczveil",
+          "Arka Majumdar",
+          "Raymond G. Beausoleil"
+        ],
+        "category": "physics.optics",
+        "categories": [
+          "physics.optics",
+          "physics.app-ph"
+        ],
+        "published": "2023-05-23T17:22:41Z",
+        "links": {
+          "pdf": "http://arxiv.org/pdf/2305.14271v1"
+        },
+        "is_full_content": false
+      },
+      "relevance_score": null,
+      "section_headers": [],
+      "language": "en"
+    },
+    {
+      "title": "Joint Transmission and Computing Scheduling for Status Update with\n  Mobile Edge Computing",
+      "content": "Age of Information (AoI), defined as the time elapsed since the generation of\nthe latest received update, is a promising performance metric to measure data\nfreshness for real-time status monitoring. In many applications, status\ninformation needs to be extracted through computing, which can be processed at\nan edge server enabled by mobile edge computing (MEC). In this paper, we aim to\nminimize the average AoI within a given deadline by jointly scheduling the\ntransmissions and computations of a series of update packets with deterministic\ntransmission and computing times. The main analytical results are summarized as\nfollows. Firstly, the minimum deadline to guarantee the successful transmission\nand computing of all packets is given. Secondly, a \\emph{no-wait computing}\npolicy which intuitively attains the minimum AoI is introduced, and the\nfeasibility condition of the policy is derived. Finally, a closed-form optimal\nscheduling policy is obtained on the condition that the deadline exceeds a\ncertain threshold. The behavior of the optimal transmission and computing\npolicy is illustrated by numerical results with different values of the\ndeadline, which validates the analytical results.",
+      "source_name": "arXiv",
+      "source_type": "academic",
+      "url": "http://arxiv.org/pdf/2002.09719v1",
+      "retrieved_at": "2025-05-10T15:23:21.912847",
+      "metadata": {
+        "id": "2002.09719v1",
+        "authors": [
+          "Jie Gong",
+          "Qiaobin Kuang",
+          "Xiang Chen"
+        ],
+        "category": "cs.IT",
+        "categories": [
+          "cs.IT",
+          "eess.SP",
+          "math.IT"
+        ],
+        "published": "2020-02-22T15:09:56Z",
+        "links": {
+          "pdf": "http://arxiv.org/pdf/2002.09719v1"
+        },
+        "is_full_content": false
+      },
+      "relevance_score": null,
+      "section_headers": [],
+      "language": "en"
+    }
+  ],
+  "content_results": [
+    {
+      "title": "Blockchain Technologies for Smart Energy Systems: Fundamentals,\n  Challenges and Solutions",
+      "content": "In this paper, we discuss the integration of blockchain in smart energy\nsystems. We present various blockchain technology solutions, review important\nblockchain platforms, and several blockchain based smart energy projects in\ndifferent smart energy domains. The majority of blockchain platforms with\nembedded combination of blockchain technology solutions are computing- and\nresource- intensive, and hence not entirely suitable for smart energy\napplications. We consider the requirements of smart energy systems and\naccordingly identify appropriate blockchain technology solutions for smart\nenergy applications. Our analysis can help in the development of flexible\nblockchain platforms for smart energy systems.",
+      "source_name": "arXiv",
+      "source_type": "academic",
+      "url": "http://arxiv.org/pdf/1909.02914v1",
+      "retrieved_at": "2025-05-10T15:23:22.475655",
+      "metadata": {
+        "id": "1909.02914",
+        "authors": [
+          "Naveed UL Hassan",
+          "Chau Yuen",
+          "Dusit Niyato"
+        ],
+        "category": "cs.CY",
+        "categories": [
+          "cs.CY",
+          "cs.CR"
+        ],
+        "published": "2019-09-06T13:55:14Z",
+        "links": {
+          "alternate": "http://arxiv.org/abs/1909.02914v1",
+          "pdf": "http://arxiv.org/pdf/1909.02914v1"
+        },
+        "doi": null,
+        "journal_ref": null,
+        "comment": "Submitted to IEEE Industrial Electronics Magazine",
+        "is_full_content": false
+      },
+      "relevance_score": null,
+      "section_headers": [],
+      "language": "en"
+    }
+  ],
+  "synthesis": {
+    "title": "Research Synthesis: What are the latest developments in quantum comput",
+    "content": "The provided source does not contain information relevant to the latest developments in quantum computing. It focuses on the integration of blockchain technologies in smart energy systems, which is unrelated to quantum computing. Therefore, I will provide a synthesis based on the most recent and relevant developments in quantum computing from other sources up to October 2023.\n\n### Recent Developments in Quantum Computing:\n\n1. **Quantum Supremacy and Beyond**:\n   - In recent years, significant progress has been made in demonstrating quantum supremacy, where quantum computers perform tasks beyond the capability of classical computers. Google's 2019 announcement of achieving quantum supremacy was a milestone, and subsequent developments have focused on refining these capabilities and addressing errors.\n\n2. **Error Correction and Stability**:\n   - One of the critical challenges in quantum computing is error correction. Recent studies have made strides in developing more efficient quantum error correction codes, which are crucial for building stable and reliable quantum computers. Techniques like surface codes and cat codes are gaining traction.\n\n3. **Quantum Algorithms and Applications**:\n   - New quantum algorithms are being developed to solve complex problems in fields such as cryptography, material science, and drug discovery. The focus is on creating algorithms that can leverage quantum advantages in practical scenarios.\n\n4. **Hardware Advancements**:\n   - There have been significant advancements in quantum hardware, particularly in increasing the number of qubits and improving their coherence times. Companies like IBM, Rigetti, and IonQ are pushing the boundaries with new quantum processors.\n\n5. **Hybrid Quantum-Classical Systems**:\n   - A trend towards hybrid systems that combine quantum and classical computing is emerging. These systems aim to utilize the strengths of both paradigms to tackle complex computational problems more efficiently.\n\n6. **Quantum Networking and Communication**:\n   - Recent developments in quantum networking are paving the way for a quantum internet. Efforts are being made to develop protocols for secure quantum communication and to establish long-distance quantum networks.\n\n### Implications for Future Research and Applications:\n\n- **Scalability and Commercialization**: As quantum technology matures, efforts are being directed towards making quantum computing scalable and commercially viable. This involves not only technical advancements but also developing a robust ecosystem of software and applications.\n  \n- **Cross-disciplinary Research**: Quantum computing is increasingly intersecting with other fields, such as artificial intelligence and materials science, leading to innovative approaches and solutions.\n\n- **Policy and Ethical Considerations**: As quantum computing approaches practical usability, there are growing discussions around the ethical implications and the need for policies to guide its development and deployment.\n\nIn summary, the field of quantum computing is rapidly evolving, with significant advancements in error correction, hardware, and hybrid systems. These developments are setting the stage for more practical and widespread applications, marking a shift from theoretical exploration to tangible impact.",
+    "synthesis_type": "latest_research",
+    "query": "What are the latest developments in quantum computing?",
+    "generated_at": "2025-05-10T15:23:31.885702",
+    "sources_used": 1,
+    "language": "en",
+    "sections": {
+      "Recent Developments in Quantum Computing:": "1. **Quantum Supremacy and Beyond**:\n   - In recent years, significant progress has been made in demonstrating quantum supremacy, where quantum computers perform tasks beyond the capability of classical computers. Google's 2019 announcement of achieving quantum supremacy was a milestone, and subsequent developments have focused on refining these capabilities and addressing errors.\n\n2. **Error Correction and Stability**:\n   - One of the critical challenges in quantum computing is error correction. Recent studies have made strides in developing more efficient quantum error correction codes, which are crucial for building stable and reliable quantum computers. Techniques like surface codes and cat codes are gaining traction.\n\n3. **Quantum Algorithms and Applications**:\n   - New quantum algorithms are being developed to solve complex problems in fields such as cryptography, material science, and drug discovery. The focus is on creating algorithms that can leverage quantum advantages in practical scenarios.\n\n4. **Hardware Advancements**:\n   - There have been significant advancements in quantum hardware, particularly in increasing the number of qubits and improving their coherence times. Companies like IBM, Rigetti, and IonQ are pushing the boundaries with new quantum processors.\n\n5. **Hybrid Quantum-Classical Systems**:\n   - A trend towards hybrid systems that combine quantum and classical computing is emerging. These systems aim to utilize the strengths of both paradigms to tackle complex computational problems more efficiently.\n\n6. **Quantum Networking and Communication**:\n   - Recent developments in quantum networking are paving the way for a quantum internet. Efforts are being made to develop protocols for secure quantum communication and to establish long-distance quantum networks.",
+      "Implications for Future Research and Applications:": "- **Scalability and Commercialization**: As quantum technology matures, efforts are being directed towards making quantum computing scalable and commercially viable. This involves not only technical advancements but also developing a robust ecosystem of software and applications.\n  \n- **Cross-disciplinary Research**: Quantum computing is increasingly intersecting with other fields, such as artificial intelligence and materials science, leading to innovative approaches and solutions.\n\n- **Policy and Ethical Considerations**: As quantum computing approaches practical usability, there are growing discussions around the ethical implications and the need for policies to guide its development and deployment.\n\nIn summary, the field of quantum computing is rapidly evolving, with significant advancements in error correction, hardware, and hybrid systems. These developments are setting the stage for more practical and widespread applications, marking a shift from theoretical exploration to tangible impact."
+    },
+    "citations": [],
+    "confidence_score": null,
+    "metadata": {
+      "model": "gpt-4o",
+      "temperature": 0.3,
+      "custom_prompt": ""
+    }
+  },
+  "metadata": {
+    "depth": "standard",
+    "language": "en",
+    "synthesis_type": "latest_research",
+    "sources_analyzed": 1,
+    "total_sources_found": 10
+  }
+}

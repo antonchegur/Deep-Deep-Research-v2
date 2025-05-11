@@ -584,7 +584,7 @@ class ContextManager:
         
         # Sort sources by score
         scored_sources = [(score_source(s), s) for s in sources]
-        scored_sources.sort(reverse=True)
+        scored_sources.sort(key=lambda x: x[0], reverse=True)
         
         return [s[1] for s in scored_sources]
     

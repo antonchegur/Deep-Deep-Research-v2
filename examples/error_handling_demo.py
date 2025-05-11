@@ -18,10 +18,10 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from src.research.synthesizer.gpt4_turbo import GPT4Synthesizer
 from src.research.synthesizer.base import SynthesisType
-from src.research.adapters import SourceResult
+from src.research.adapters import SourceResult, SourceType
 from src.research.synthesizer.error_handling import (
     ResearchError, ErrorCategory, ErrorSeverity,
-    error_tracker, fallback_manager
+    error_tracker, fallback_manager, classify_openai_error, classify_network_error
 )
 
 # Configure logging
@@ -37,24 +37,27 @@ logger = logging.getLogger(__name__)
 SAMPLE_QUERY = "What are the economic impacts of climate change?"
 SAMPLE_SOURCES = [
     SourceResult(
-        source_id="1",
         title="Economic Consequences of Climate Change",
-        url="https://example.com/climate-economics",
         content="Climate change is expected to reduce global GDP by up to 18% by 2050 if global temperatures rise by 3.2°C.",
+        source_name="Example Source",
+        source_type=SourceType.WEB_SEARCH,
+        url="https://example.com/climate-economics",
         metadata={"relevance": 0.95}
     ),
     SourceResult(
-        source_id="2",
         title="Agriculture and Climate Change",
-        url="https://example.com/agriculture-climate",
         content="Changing weather patterns are projected to reduce crop yields by 30% in certain regions, impacting food security and prices worldwide.",
+        source_name="Example Source",
+        source_type=SourceType.WEB_SEARCH,
+        url="https://example.com/agriculture-climate",
         metadata={"relevance": 0.87}
     ),
     SourceResult(
-        source_id="3",
         title="Rising Sea Levels and Coastal Infrastructure",
-        url="https://example.com/sea-levels",
         content="Sea level rise threatens infrastructure worth over $100 billion in coastal cities, requiring massive investment in adaptation measures.",
+        source_name="Example Source",
+        source_type=SourceType.WEB_SEARCH,
+        url="https://example.com/sea-levels",
         metadata={"relevance": 0.82}
     )
 ]
@@ -80,10 +83,11 @@ async def demo_error_types():
     large_content = "This is a very long text. " * 10000
     large_sources = [
         SourceResult(
-            source_id="large",
             title="Very Large Document",
-            url="https://example.com/large",
             content=large_content,
+            source_name="Example Source",
+            source_type=SourceType.WEB_SEARCH,
+            url="https://example.com/large",
             metadata={"relevance": 0.9}
         )
     ]

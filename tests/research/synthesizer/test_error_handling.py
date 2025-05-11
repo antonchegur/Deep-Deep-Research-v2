@@ -18,23 +18,25 @@ from src.research.synthesizer.error_handling import (
 )
 from src.research.synthesizer.gpt4_turbo import GPT4Synthesizer
 from src.research.adapters import SourceResult
-from src.research.synthesizer.base import SynthesisType
+from src.research.synthesizer.base import SynthesisType, SourceType
 
 # Sample data for testing
 SAMPLE_QUERY = "What are the effects of climate change on biodiversity?"
 SAMPLE_SOURCE_RESULTS = [
     SourceResult(
-        source_id="1",
         title="Climate Change Impact on Ecosystems",
-        url="https://example.com/climate1",
         content="Climate change affects biodiversity in multiple ways.",
+        source_name="Example Source",
+        source_type=SourceType.WEB_SEARCH,
+        url="https://example.com/climate1",
         metadata={"relevance": 0.95}
     ),
     SourceResult(
-        source_id="2",
         title="Biodiversity Loss",
-        url="https://example.com/biodiversity",
         content="Species are going extinct at an alarming rate due to habitat loss and climate change.",
+        source_name="Example Source",
+        source_type=SourceType.WEB_SEARCH,
+        url="https://example.com/biodiversity",
         metadata={"relevance": 0.85}
     )
 ]

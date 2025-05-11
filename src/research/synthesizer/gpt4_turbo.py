@@ -186,6 +186,7 @@ class GPT4Synthesizer(BaseSynthesizer):
             return None
         
         # Call GPT-4 Turbo API with retry and fallback
+        response_text = None
         try:
             response_text = await self._call_gpt4_api_with_retry_and_context(messages)
             if not response_text:
@@ -368,6 +369,7 @@ class GPT4Synthesizer(BaseSynthesizer):
             return None
         
         # Call GPT-4 Turbo API with retry and fallback
+        response_text = None
         try:
             response_text = await self._call_gpt4_api_with_retry_and_context(messages)
             if not response_text:
@@ -741,7 +743,7 @@ class GPT4Synthesizer(BaseSynthesizer):
                     citations.append({
                         "index": idx,
                         "title": source.title,
-                        "source": source.source,
+                        "source": source.source_name,
                         "url": source.url
                     })
         

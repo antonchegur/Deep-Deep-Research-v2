@@ -1,0 +1,4 @@
+Report Title: {report_title}
+Date: {report_date}
+Language: English
+--- 

@@ -1,0 +1,489 @@
+{
+  "query": "Compare the effectiveness of mRNA vaccines versus traditional vaccines",
+  "search_results": [
+    {
+      "title": "HPV vaccine",
+      "content": "(HPV) <span class=\"searchmatch\">vaccines</span> are <span class=\"searchmatch\">vaccines</span> intended to provide acquired immunity against infection by certain types <span class=\"searchmatch\">of</span> human papillomavirus. <span class=\"searchmatch\">The</span> first HPV <span class=\"searchmatch\">vaccine</span> became",
+      "source_name": "Wikipedia",
+      "source_type": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/HPV_vaccine",
+      "retrieved_at": "2025-05-10T15:25:40.920745",
+      "metadata": {
+        "pageid": 3304705,
+        "wordcount": 0,
+        "size": 0,
+        "is_full_content": false
+      },
+      "relevance_score": null,
+      "section_headers": [],
+      "language": "en"
+    },
+    {
+      "title": "Vaccine hesitancy",
+      "content": "associated with <span class=\"searchmatch\">vaccines</span> are occasionally observed, <span class=\"searchmatch\">the</span> scientific consensus that <span class=\"searchmatch\">vaccines</span> are generally safe and effective is overwhelming. <span class=\"searchmatch\">Vaccine</span> hesitancy",
+      "source_name": "Wikipedia",
+      "source_type": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Vaccine_hesitancy",
+      "retrieved_at": "2025-05-10T15:25:40.920768",
+      "metadata": {
+        "pageid": 1742315,
+        "wordcount": 0,
+        "size": 0,
+        "is_full_content": false
+      },
+      "relevance_score": null,
+      "section_headers": [],
+      "language": "en"
+    },
+    {
+      "title": "Vaccine misinformation",
+      "content": "possible to contract <span class=\"searchmatch\">the</span> disease, while in newer technologies like <span class=\"searchmatch\">mRNA</span> <span class=\"searchmatch\">vaccines</span> <span class=\"searchmatch\">the</span> <span class=\"searchmatch\">vaccine</span> does not contain <span class=\"searchmatch\">the</span> virus at all. False: <span class=\"searchmatch\">Vaccines</span> can cause harmful",
+      "source_name": "Wikipedia",
+      "source_type": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Vaccine_misinformation",
+      "retrieved_at": "2025-05-10T15:25:40.920773",
+      "metadata": {
+        "pageid": 66263029,
+        "wordcount": 0,
+        "size": 0,
+        "is_full_content": false
+      },
+      "relevance_score": null,
+      "section_headers": [],
+      "language": "en"
+    },
+    {
+      "title": "Influenza vaccine",
+      "content": "Influenza <span class=\"searchmatch\">vaccines</span>, colloquially known as flu shots or <span class=\"searchmatch\">the</span> flu jab, are <span class=\"searchmatch\">vaccines</span> that protect against infection by influenza viruses. New versions <span class=\"searchmatch\">of</span> <span class=\"searchmatch\">the</span> vaccines",
+      "source_name": "Wikipedia",
+      "source_type": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Influenza_vaccine",
+      "retrieved_at": "2025-05-10T15:25:40.920777",
+      "metadata": {
+        "pageid": 1045705,
+        "wordcount": 0,
+        "size": 0,
+        "is_full_content": false
+      },
+      "relevance_score": null,
+      "section_headers": [],
+      "language": "en"
+    },
+    {
+      "title": "CoronaVac",
+      "content": "Indonesia, <span class=\"searchmatch\">the</span> Philippines, and Turkey and relies on <span class=\"searchmatch\">traditional</span> technology similar to other inactivated-virus COVID-19 <span class=\"searchmatch\">vaccines</span>, such as <span class=\"searchmatch\">the</span> Sinopharm",
+      "source_name": "Wikipedia",
+      "source_type": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/CoronaVac",
+      "retrieved_at": "2025-05-10T15:25:40.920781",
+      "metadata": {
+        "pageid": 65084949,
+        "wordcount": 0,
+        "size": 0,
+        "is_full_content": false
+      },
+      "relevance_score": null,
+      "section_headers": [],
+      "language": "en"
+    },
+    {
+      "title": "Respiratory syncytial virus",
+      "content": "within the cytoplasm. RNA-dependent <span class=\"searchmatch\">RNA</span> polymerase transcribes <span class=\"searchmatch\">the</span> genome into 10 segments <span class=\"searchmatch\">of</span> messenger <span class=\"searchmatch\">RNA</span> (<span class=\"searchmatch\">mRNA</span>) which is translated into structural",
+      "source_name": "Wikipedia",
+      "source_type": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Respiratory_syncytial_virus",
+      "retrieved_at": "2025-05-10T15:25:40.920784",
+      "metadata": {
+        "pageid": 477489,
+        "wordcount": 0,
+        "size": 0,
+        "is_full_content": false
+      },
+      "relevance_score": null,
+      "section_headers": [],
+      "language": "en"
+    },
+    {
+      "title": "Pancreatic cancer",
+      "content": "<span class=\"searchmatch\">mRNA</span> <span class=\"searchmatch\">vaccines</span>, designed to help <span class=\"searchmatch\">the</span> immune system recognize and attack cancer cells. Patients also received standard treatment alongside <span class=\"searchmatch\">the</span> <span class=\"searchmatch\">vaccine</span>.",
+      "source_name": "Wikipedia",
+      "source_type": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Pancreatic_cancer",
+      "retrieved_at": "2025-05-10T15:25:40.920787",
+      "metadata": {
+        "pageid": 363559,
+        "wordcount": 0,
+        "size": 0,
+        "is_full_content": false
+      },
+      "relevance_score": null,
+      "section_headers": [],
+      "language": "en"
+    },
+    {
+      "title": "Management of HIV/AIDS",
+      "content": "when <span class=\"searchmatch\">compared</span> to <span class=\"searchmatch\">traditional</span> <span class=\"searchmatch\">vaccines</span> is <span class=\"searchmatch\">the</span> speed <span class=\"searchmatch\">of</span> development. <span class=\"searchmatch\">mRNA</span> <span class=\"searchmatch\">vaccines</span> take months not years, which means a multipart sequential <span class=\"searchmatch\">vaccine</span> regime",
+      "source_name": "Wikipedia",
+      "source_type": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Management_of_HIV/AIDS",
+      "retrieved_at": "2025-05-10T15:25:40.920794",
+      "metadata": {
+        "pageid": 203312,
+        "wordcount": 0,
+        "size": 0,
+        "is_full_content": false
+      },
+      "relevance_score": null,
+      "section_headers": [],
+      "language": "en"
+    },
+    {
+      "title": "Herpes simplex virus",
+      "content": "daily swab <span class=\"searchmatch\">of</span> <span class=\"searchmatch\">the</span> genital area was self-collected for HSV-2 detection by polymerase chain reaction, to <span class=\"searchmatch\">compare</span> <span class=\"searchmatch\">the</span> effect <span class=\"searchmatch\">of</span> valaciclovir <span class=\"searchmatch\">versus</span> placebo",
+      "source_name": "Wikipedia",
+      "source_type": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Herpes_simplex_virus",
+      "retrieved_at": "2025-05-10T15:25:40.920799",
+      "metadata": {
+        "pageid": 4774419,
+        "wordcount": 0,
+        "size": 0,
+        "is_full_content": false
+      },
+      "relevance_score": null,
+      "section_headers": [],
+      "language": "en"
+    },
+    {
+      "title": "Smallpox",
+      "content": "<span class=\"searchmatch\">the</span> possibility <span class=\"searchmatch\">of</span> variola virus being used as a biological weapon has rekindled interest in <span class=\"searchmatch\">the</span> development <span class=\"searchmatch\">of</span> newer <span class=\"searchmatch\">vaccines</span>. <span class=\"searchmatch\">The</span> smallpox <span class=\"searchmatch\">vaccine</span> is",
+      "source_name": "Wikipedia",
+      "source_type": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Smallpox",
+      "retrieved_at": "2025-05-10T15:25:40.920803",
+      "metadata": {
+        "pageid": 16829895,
+        "wordcount": 0,
+        "size": 0,
+        "is_full_content": false
+      },
+      "relevance_score": null,
+      "section_headers": [],
+      "language": "en"
+    },
+    {
+      "title": "Social Imitation Dynamics of Vaccination Driven by Vaccine Effectiveness\n  and Beliefs",
+      "content": "Declines in vaccination coverage for vaccine-preventable diseases, such as\nmeasles and chickenpox, have enabled their surprising comebacks and pose\nsignificant public health challenges in the wake of growing vaccine hesitancy.\nVaccine opt-outs and refusals are often fueled by beliefs concerning\nperceptions of vaccine effectiveness and exaggerated risks. Here, we quantify\nthe impact of competing beliefs -- vaccine-averse versus vaccine-neutral -- on\nsocial imitation dynamics of vaccination, alongside the epidemiological\ndynamics of disease transmission. These beliefs may be pre-existing and fixed,\nor coevolving attitudes. This interplay among beliefs, behaviors, and disease\ndynamics demonstrates that individuals are not perfectly rational; rather, they\nbase their vaccine uptake decisions on beliefs, personal experiences, and\nsocial influences. We find that the presence of a small proportion of fixed\nvaccine-averse beliefs can significantly exacerbate the vaccination dilemma,\nmaking the tipping point in the hysteresis loop more sensitive to changes in\nindividuals' perceived costs of vaccination and vaccine effectiveness. However,\nin scenarios where competing beliefs spread concurrently with vaccination\nbehavior, their double-edged impact can lead to self-correction and alignment\nbetween vaccine beliefs and behaviors. The results show that coevolution of\nvaccine beliefs and behaviors makes populations more sensitive to abrupt\nchanges in perceptions of vaccine cost and effectiveness compared to scenarios\nwithout beliefs. Our work provides valuable insights into harnessing the social\ncontagion of even vaccine-neutral attitudes to overcome vaccine hesitancy.",
+      "source_name": "arXiv",
+      "source_type": "academic",
+      "url": "http://arxiv.org/pdf/2503.04572v1",
+      "retrieved_at": "2025-05-10T15:25:41.158868",
+      "metadata": {
+        "id": "2503.04572v1",
+        "authors": [
+          "Feng Fu",
+          "Ran Zhuo",
+          "Xingru Chen"
+        ],
+        "category": "physics.soc-ph",
+        "categories": [
+          "physics.soc-ph",
+          "q-bio.PE"
+        ],
+        "published": "2025-03-06T16:07:25Z",
+        "links": {
+          "pdf": "http://arxiv.org/pdf/2503.04572v1"
+        },
+        "is_full_content": false
+      },
+      "relevance_score": null,
+      "section_headers": [],
+      "language": "en"
+    },
+    {
+      "title": "Understanding hesitancy with revealed preferences across COVID-19\n  vaccine types",
+      "content": "Many countries have secured larger quantities of COVID-19 vaccines than their\npopulace is willing to take. This abundance and variety of vaccines created a\nhistorical moment to understand vaccine hesitancy better. Never before were\nmore types of vaccines available for an illness and the intensity of\nvaccine-related public discourse is unprecedented. Yet, the heterogeneity of\nhesitancy by vaccine types has been neglected so far, even though factual or\nbelieved vaccine characteristics and patient attributes are known to influence\nacceptance. We address this problem by analysing acceptance and assessment of\nfive vaccine types using information collected with a nationally representative\nsurvey at the end of the third wave of the COVID-19 pandemic in Hungary, where\na unique portfolio of vaccines were available to the public in large\nquantities. Our special case enables us to quantify revealed preferences across\nvaccine types since one could evaluate a vaccine unacceptable and even could\nreject an assigned vaccine to wait for another type. We find that the source of\ninformation that respondents trust characterizes their attitudes towards\nvaccine types differently and leads to divergent vaccine hesitancy. Believers\nof conspiracy theories were significantly more likely to evaluate the mRNA\nvaccines (Pfizer and Moderna) unacceptable while those who follow the advice of\npoliticians evaluate vector-based (AstraZeneca and Sputnik) or whole-virus\nvaccines (Sinopharm) acceptable with higher likelihood. We illustrate that the\nrejection of non-desired and re-selection of preferred vaccines fragments the\npopulation by the mRNA versus other type of vaccines while it generally\nimproves the assessment of the received vaccine. These results highlight that\ngreater variance of available vaccine types and individual free choice are\ndesirable conditions that can widen the acceptance of vaccines in societies.",
+      "source_name": "arXiv",
+      "source_type": "academic",
+      "url": "http://arxiv.org/pdf/2111.06462v2",
+      "retrieved_at": "2025-05-10T15:25:41.159105",
+      "metadata": {
+        "id": "2111.06462v2",
+        "authors": [
+          "Krist\u00f3f Kutasi",
+          "J\u00falia Koltai",
+          "\u00c1gnes Szab\u00f3-Morvai",
+          "Gergely R\u00f6st",
+          "M\u00e1rton Karsai",
+          "P\u00e9ter Bir\u00f3",
+          "Bal\u00e1zs Lengyel"
+        ],
+        "category": "econ.GN",
+        "categories": [
+          "econ.GN",
+          "physics.soc-ph",
+          "q-fin.EC"
+        ],
+        "published": "2021-11-11T21:05:02Z",
+        "links": {
+          "pdf": "http://arxiv.org/pdf/2111.06462v2"
+        },
+        "is_full_content": false
+      },
+      "relevance_score": null,
+      "section_headers": [],
+      "language": "en"
+    },
+    {
+      "title": "Accurate Measures of Vaccination and Concerns of Vaccine Holdouts from\n  Web Search Logs",
+      "content": "To design effective vaccine policies, policymakers need detailed data about\nwho has been vaccinated, who is holding out, and why. However, existing data in\nthe US are insufficient: reported vaccination rates are often delayed or\nmissing, and surveys of vaccine hesitancy are limited by high-level questions\nand self-report biases. Here, we show how large-scale search engine logs and\nmachine learning can be leveraged to fill these gaps and provide novel insights\nabout vaccine intentions and behaviors. First, we develop a vaccine intent\nclassifier that can accurately detect when a user is seeking the COVID-19\nvaccine on search. Our classifier demonstrates strong agreement with CDC\nvaccination rates, with correlations above 0.86, and estimates vaccine intent\nrates to the level of ZIP codes in real time, allowing us to pinpoint more\ngranular trends in vaccine seeking across regions, demographics, and time. To\ninvestigate vaccine hesitancy, we use our classifier to identify two groups,\nvaccine early adopters and vaccine holdouts. We find that holdouts, compared to\nearly adopters matched on covariates, are 69% more likely to click on untrusted\nnews sites. Furthermore, we organize 25,000 vaccine-related URLs into a\nhierarchical ontology of vaccine concerns, and we find that holdouts are far\nmore concerned about vaccine requirements, vaccine development and approval,\nand vaccine myths, and even within holdouts, concerns vary significantly across\ndemographic groups. Finally, we explore the temporal dynamics of vaccine\nconcerns and vaccine seeking, and find that key indicators emerge when\nindividuals convert from holding out to preparing to accept the vaccine.",
+      "source_name": "arXiv",
+      "source_type": "academic",
+      "url": "http://arxiv.org/pdf/2306.07457v1",
+      "retrieved_at": "2025-05-10T15:25:41.159248",
+      "metadata": {
+        "id": "2306.07457v1",
+        "authors": [
+          "Serina Chang",
+          "Adam Fourney",
+          "Eric Horvitz"
+        ],
+        "category": "cs.CY",
+        "categories": [
+          "cs.CY",
+          "cs.AI"
+        ],
+        "published": "2023-06-12T23:19:55Z",
+        "links": {
+          "doi": "http://dx.doi.org/10.1038/s41467-024-50614-4",
+          "pdf": "http://arxiv.org/pdf/2306.07457v1"
+        },
+        "is_full_content": false
+      },
+      "relevance_score": null,
+      "section_headers": [],
+      "language": "en"
+    },
+    {
+      "title": "mRNA2vec: mRNA Embedding with Language Model in the 5'UTR-CDS for mRNA\n  Design",
+      "content": "Messenger RNA (mRNA)-based vaccines are accelerating the discovery of new\ndrugs and revolutionizing the pharmaceutical industry. However, selecting\nparticular mRNA sequences for vaccines and therapeutics from extensive mRNA\nlibraries is costly. Effective mRNA therapeutics require carefully designed\nsequences with optimized expression levels and stability. This paper proposes a\nnovel contextual language model (LM)-based embedding method: mRNA2vec. In\ncontrast to existing mRNA embedding approaches, our method is based on the\nself-supervised teacher-student learning framework of data2vec. We jointly use\nthe 5' untranslated region (UTR) and coding sequence (CDS) region as the input\nsequences. We adapt our LM-based approach specifically to mRNA by 1)\nconsidering the importance of location on the mRNA sequence with probabilistic\nmasking, 2) using Minimum Free Energy (MFE) prediction and Secondary Structure\n(SS) classification as additional pretext tasks. mRNA2vec demonstrates\nsignificant improvements in translation efficiency (TE) and expression level\n(EL) prediction tasks in UTR compared to SOTA methods such as UTR-LM. It also\ngives a competitive performance in mRNA stability and protein production level\ntasks in CDS such as CodonBERT.",
+      "source_name": "arXiv",
+      "source_type": "academic",
+      "url": "http://arxiv.org/pdf/2408.09048v2",
+      "retrieved_at": "2025-05-10T15:25:41.159404",
+      "metadata": {
+        "id": "2408.09048v2",
+        "authors": [
+          "Honggen Zhang",
+          "Xiangrui Gao",
+          "June Zhang",
+          "Lipeng Lai"
+        ],
+        "category": "q-bio.QM",
+        "categories": [
+          "q-bio.QM",
+          "cs.AI",
+          "cs.LG"
+        ],
+        "published": "2024-08-16T23:23:40Z",
+        "links": {
+          "pdf": "http://arxiv.org/pdf/2408.09048v2"
+        },
+        "is_full_content": false
+      },
+      "relevance_score": null,
+      "section_headers": [],
+      "language": "en"
+    },
+    {
+      "title": "Quantification of vaccine waning as a challenge effect",
+      "content": "Knowing whether vaccine protection wanes over time is important for health\npolicy and drug development. However, quantifying waning effects is difficult.\nA simple contrast of vaccine efficacy at two different times compares different\npopulations of individuals: those who were uninfected at the first time versus\nthose who remain uninfected until the second time. Thus, the contrast of\nvaccine efficacy at early and late times can not be interpreted as a causal\neffect. We propose to quantify vaccine waning using the challenge effect, which\nis a contrast of outcomes under controlled exposures to the infectious agent\nfollowing vaccination. We identify sharp bounds on the challenge effect under\nnon-parametric assumptions that are broadly applicable in vaccine trials using\nroutinely collected data. We demonstrate that the challenge effect can differ\nsubstantially from the conventional vaccine efficacy due to depletion of\nsusceptible individuals from the risk set over time. Finally, we apply the\nmethods to derive bounds on the waning of the BNT162b2 COVID-19 vaccine using\ndata from a placebo-controlled randomized trial. Our estimates of the challenge\neffect suggest waning protection after 2 months beyond administration of the\nsecond vaccine dose.",
+      "source_name": "arXiv",
+      "source_type": "academic",
+      "url": "http://arxiv.org/pdf/2405.01336v2",
+      "retrieved_at": "2025-05-10T15:25:41.159537",
+      "metadata": {
+        "id": "2405.01336v2",
+        "authors": [
+          "Matias Janvin",
+          "Mats J. Stensrud"
+        ],
+        "category": "stat.ME",
+        "categories": [
+          "stat.ME"
+        ],
+        "published": "2024-05-02T14:41:16Z",
+        "links": {
+          "doi": "http://dx.doi.org/10.1080/01621459.2024.2408776",
+          "pdf": "http://arxiv.org/pdf/2405.01336v2"
+        },
+        "is_full_content": false
+      },
+      "relevance_score": null,
+      "section_headers": [],
+      "language": "en"
+    },
+    {
+      "title": "Heterogeneous population and its resilience to misinformation in\n  vaccination uptake: A dual ODE and network approach",
+      "content": "Misinformation about vaccination poses a significant public health threat by\nreducing vaccination rates and increasing disease burden. Understanding\npopulation heterogeneity can aid in recognizing and mitigating the effects of\nsuch misinformation, especially when vaccine effectiveness is low. Our research\nquantifies the impact of misinformation on vaccination uptake and explores its\neffects in heterogeneous versus homogeneous populations. We employed a dual\napproach combining ordinary differential equations (ODE) and complex network\nmodels to analyze how different epidemiological parameters influence disease\nspread and vaccination behaviour. Our results indicate that misinformation\nsignificantly lowers vaccination rates, particularly in homogeneous\npopulations, while heterogeneous populations demonstrate greater resilience.\nAmong network topologies, small-world networks achieve higher vaccination rates\nunder varying vaccine efficacies, while scale-free networks experience reduced\nvaccine coverage with higher misinformation amplification. Notably, cumulative\ninfection remains independent of disease transmission rate when the vaccine is\npartially effective. In small-world networks, cumulative infection shows high\nstochasticity across vaccination rates and misinformation parameters, while\ncumulative vaccination is highest with higher and lower misinformation. To\ncontrol disease spread, public health efforts should address misinformation,\nparticularly in homogeneous populations and scale-free networks. Building\nresilience by promoting reliable vaccine information can boost vaccination\nrates. Focusing campaigns on small-world networks can result in higher vaccine\nuptake.",
+      "source_name": "arXiv",
+      "source_type": "academic",
+      "url": "http://arxiv.org/pdf/2411.11813v1",
+      "retrieved_at": "2025-05-10T15:25:41.159668",
+      "metadata": {
+        "id": "2411.11813v1",
+        "authors": [
+          "Komal Tanwar",
+          "Viney Kumar",
+          "Jai Prakash Tripathi"
+        ],
+        "category": "physics.soc-ph",
+        "categories": [
+          "physics.soc-ph"
+        ],
+        "published": "2024-11-11T08:20:56Z",
+        "links": {
+          "pdf": "http://arxiv.org/pdf/2411.11813v1"
+        },
+        "is_full_content": false
+      },
+      "relevance_score": null,
+      "section_headers": [],
+      "language": "en"
+    },
+    {
+      "title": "Co-evolution of Vaccination Behavior and Perceived Vaccination Risk can\n  lead to a Stag-Hunt like Game",
+      "content": "Voluntary vaccination is effective to prevent infectious diseases from\nspreading. Both vaccination behavior and cognition of the vaccination risk play\nimportant roles in individual vaccination decision making. However, it is not\nclear how the co-evolution of the two shapes the population-wide vaccination\nbehavior. We establish a coupled dynamics of epidemic, vaccination behavior and\nperceived vaccination risk with three different time scales. We assume that the\nincrease of vaccination level inhibits the rise of perceived vaccination risk,\nand the increase of perceived vaccination risk inhibits the rise of vaccination\nlevel. It is shown that the resulting vaccination behavior is similar to the\nstag-hunt game, provided that the basic reproductive ratio is moderate and that\nthe epidemic dynamics evolves fast. This is in contrast with the previous view\nthat vaccination is a snowdrift like game. Furthermore, we find that epidemic\nbreaks out repeatedly and eventually leads to vaccine scares if these three\ndynamics evolve on a similar time scale. And we propose some ways to promote\nvaccination behavior, such as controlling side-effect bias and perceived\nvaccination costs. Our work sheds light on epidemic control via vaccination by\ntaking into account the co-evolutionary dynamics of cognition and behavior.",
+      "source_name": "arXiv",
+      "source_type": "academic",
+      "url": "http://arxiv.org/pdf/2207.05964v1",
+      "retrieved_at": "2025-05-10T15:25:41.159884",
+      "metadata": {
+        "id": "2207.05964v1",
+        "authors": [
+          "Yuan Liu",
+          "Bin Wu"
+        ],
+        "category": "math.DS",
+        "categories": [
+          "math.DS",
+          "physics.soc-ph",
+          "q-bio.PE"
+        ],
+        "published": "2022-07-13T05:05:53Z",
+        "links": {
+          "doi": "http://dx.doi.org/10.1103/PhysRevE.106.034308",
+          "pdf": "http://arxiv.org/pdf/2207.05964v1"
+        },
+        "is_full_content": false
+      },
+      "relevance_score": null,
+      "section_headers": [],
+      "language": "en"
+    },
+    {
+      "title": "Application of Traditional Vaccine Development Strategies to SARS-CoV-2",
+      "content": "Over the past 150 years, vaccines have revolutionized the relationship\nbetween people and disease. During the COVID-19 pandemic, technologies such as\nmRNA vaccines have received attention due to their novelty and successes.\nHowever, more traditional vaccine development platforms have also yielded\nimportant tools in the worldwide fight against the SARS-CoV-2 virus. A variety\nof approaches have been used to develop COVID-19 vaccines that are now\nauthorized for use in countries around the world. In this review, we highlight\nstrategies that focus on the viral capsid and outwards, rather than on the\nnucleic acids inside. These approaches fall into two broad categories:\nwhole-virus vaccines and subunit vaccines. Whole-virus vaccines use the virus\nitself, either in an inactivated or attenuated state. Subunit vaccines contain\ninstead an isolated, immunogenic component of the virus. Here, we highlight\nvaccine candidates that apply these approaches against SARS-CoV-2 in different\nways. In a companion manuscript, we review the more recent and novel\ndevelopment of nucleic-acid based vaccine technologies. We further consider the\nrole that these COVID-19 vaccine development programs have played in\nprophylaxis at the global scale. Well-established vaccine technologies have\nproved especially important to making vaccines accessible in low- and\nmiddle-income countries. Vaccine development programs that use established\nplatforms have been undertaken in a much wider range of countries than those\nusing nucleic-acid-based technologies, which have been led by wealthy Western\ncountries. Therefore, these vaccine platforms, though less novel from a\nbiotechnological standpoint, have proven to be extremely important to the\nmanagement of SARS-CoV-2.",
+      "source_name": "arXiv",
+      "source_type": "academic",
+      "url": "http://arxiv.org/pdf/2208.08907v2",
+      "retrieved_at": "2025-05-10T15:25:41.160194",
+      "metadata": {
+        "id": "2208.08907v2",
+        "authors": [
+          "Halie M. Rando",
+          "Ronan Lordan",
+          "Alexandra J. Lee",
+          "Amruta Naik",
+          "Nils Wellhausen",
+          "Elizabeth Sell",
+          "Likhitha Kolla",
+          "COVID-19 Review Consortium",
+          "Anthony Gitter",
+          "Casey S. Greene"
+        ],
+        "category": "q-bio.OT",
+        "categories": [
+          "q-bio.OT"
+        ],
+        "published": "2022-08-16T20:58:12Z",
+        "links": {
+          "doi": "http://dx.doi.org/10.1128/msystems.00927-22",
+          "pdf": "http://arxiv.org/pdf/2208.08907v2"
+        },
+        "is_full_content": false
+      },
+      "relevance_score": null,
+      "section_headers": [],
+      "language": "en"
+    },
+    {
+      "title": "Helix-mRNA: A Hybrid Foundation Model For Full Sequence mRNA\n  Therapeutics",
+      "content": "mRNA-based vaccines have become a major focus in the pharmaceutical industry.\nThe coding sequence as well as the Untranslated Regions (UTRs) of an mRNA can\nstrongly influence translation efficiency, stability, degradation, and other\nfactors that collectively determine a vaccine's effectiveness. However,\noptimizing mRNA sequences for those properties remains a complex challenge.\nExisting deep learning models often focus solely on coding region optimization,\noverlooking the UTRs. We present Helix-mRNA, a structured state-space-based and\nattention hybrid model to address these challenges. In addition to a first\npre-training, a second pre-training stage allows us to specialise the model\nwith high-quality data. We employ single nucleotide tokenization of mRNA\nsequences with codon separation, ensuring prior biological and structural\ninformation from the original mRNA sequence is not lost. Our model, Helix-mRNA,\noutperforms existing methods in analysing both UTRs and coding region\nproperties. It can process sequences 6x longer than current approaches while\nusing only 10% of the parameters of existing foundation models. Its predictive\ncapabilities extend to all mRNA regions. We open-source the model\n(https://github.com/helicalAI/helical) and model weights\n(https://huggingface.co/helical-ai/helix-mRNA).",
+      "source_name": "arXiv",
+      "source_type": "academic",
+      "url": "http://arxiv.org/pdf/2502.13785v2",
+      "retrieved_at": "2025-05-10T15:25:41.160344",
+      "metadata": {
+        "id": "2502.13785v2",
+        "authors": [
+          "Matthew Wood",
+          "Mathieu Klop",
+          "Maxime Allard"
+        ],
+        "category": "q-bio.GN",
+        "categories": [
+          "q-bio.GN",
+          "cs.AI"
+        ],
+        "published": "2025-02-19T14:51:41Z",
+        "links": {
+          "pdf": "http://arxiv.org/pdf/2502.13785v2"
+        },
+        "is_full_content": false
+      },
+      "relevance_score": null,
+      "section_headers": [],
+      "language": "en"
+    },
+    {
+      "title": "Modeling the effects of adherence to vaccination and health protocols in\n  epidemic dynamics by means of an SIR model",
+      "content": "Susceptible-Infected-Recovered (SIR) models have been used for decades to\nunderstand epidemic outbreak dynamics. We develop an SIR model specifically\ndesigned to study the effects of population behavior with respect to health and\nvaccination protocols in a generic epidemic. Through a collection of\nparameters, our model includes the traditional SIR components: population\nbirth, death, infection, recovery and vaccination rates, as well as limited\nimmunity.\n  We first use this simple setup to compare the effects of two vaccination\nschemes, one in which people are vaccinated at a rate proportional with the\npopulation, and one in which vaccines are administered to a fraction of the\nsusceptible people (both of which are know strategies in real life epidemics).\nWe then expand on the model and the analysis by investigating how these two\nvaccination schemes hold under two scenarios of population behavior: one in\nwhich people abide by health protocols and work towards diminishing\ntransmission when infection is high; one in which people relax health protocols\nwhen infection is high.\n  We illustrate these two aspects (vaccination and adherence to health\nprotocols) act together to control the epidemic outbreak. While it is ideal\nthat the tow components act jointly, we also show that tight observance of\nhealth protocols may diminish the need for vaccination in the effort to clear\nor mitigate the outbreak. Conversely, an efficient vaccination strategy can\ncompensate for some degree of laxity in people's behavior.",
+      "source_name": "arXiv",
+      "source_type": "academic",
+      "url": "http://arxiv.org/pdf/2308.01038v1",
+      "retrieved_at": "2025-05-10T15:25:41.160520",
+      "metadata": {
+        "id": "2308.01038v1",
+        "authors": [
+          "Jasmin Nunuvero",
+          "Angelique Santiago",
+          "Moshe Cohen",
+          "Anca Radulescu"
+        ],
+        "category": "q-bio.PE",
+        "categories": [
+          "q-bio.PE",
+          "math.DS"
+        ],
+        "published": "2023-08-02T09:30:02Z",
+        "links": {
+          "pdf": "http://arxiv.org/pdf/2308.01038v1"
+        },
+        "is_full_content": false
+      },
+      "relevance_score": null,
+      "section_headers": [],
+      "language": "en"
+    }
+  ],
+  "content_results": [],
+  "synthesis": null,
+  "metadata": {
+    "depth": "deep",
+    "language": "en",
+    "synthesis_type": "comparison",
+    "sources_analyzed": 0,
+    "total_sources_found": 20
+  }
+}

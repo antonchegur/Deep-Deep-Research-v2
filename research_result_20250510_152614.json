@@ -1,0 +1,65 @@
+{
+  "query": "Summarize the evidence for climate change",
+  "search_results": [
+    {
+      "title": "Climate change and infectious diseases",
+      "content": "Global <span class=\"searchmatch\">climate</span> <span class=\"searchmatch\">change</span> has increased <span class=\"searchmatch\">the</span> occurrence of some infectious diseases. Infectious diseases whose transmission is impacted by <span class=\"searchmatch\">climate</span> <span class=\"searchmatch\">change</span> include",
+      "source_name": "Wikipedia",
+      "source_type": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Climate_change_and_infectious_diseases",
+      "retrieved_at": "2025-05-10T15:26:13.820791",
+      "metadata": {
+        "pageid": 63453251,
+        "wordcount": 0,
+        "size": 0,
+        "is_full_content": false
+      },
+      "relevance_score": null,
+      "section_headers": [],
+      "language": "en"
+    },
+    {
+      "title": "Climate change in Washington",
+      "content": "Washington <span class=\"searchmatch\">Climate</span> Impacts Group 2013 assessment report, available here. Economic Impacts of <span class=\"searchmatch\">Climate</span> <span class=\"searchmatch\">Change</span> (2007) in Washington State <span class=\"searchmatch\">summarizes</span> <span class=\"searchmatch\">the</span> impact",
+      "source_name": "Wikipedia",
+      "source_type": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Climate_change_in_Washington",
+      "retrieved_at": "2025-05-10T15:26:13.820807",
+      "metadata": {
+        "pageid": 15091601,
+        "wordcount": 0,
+        "size": 0,
+        "is_full_content": false
+      },
+      "relevance_score": null,
+      "section_headers": [],
+      "language": "en"
+    },
+    {
+      "title": "Scientific consensus on climate change",
+      "content": "reports <span class=\"searchmatch\">summarizing</span> <span class=\"searchmatch\">the</span> strength and extent of consensus on <span class=\"searchmatch\">climate</span> <span class=\"searchmatch\">change</span> and its numerous aspects to <span class=\"searchmatch\">the</span> member states of <span class=\"searchmatch\">the</span> United Nations, with <span class=\"searchmatch\">the</span> major",
+      "source_name": "Wikipedia",
+      "source_type": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Scientific_consensus_on_climate_change",
+      "retrieved_at": "2025-05-10T15:26:13.820812",
+      "metadata": {
+        "pageid": 326324,
+        "wordcount": 0,
+        "size": 0,
+        "is_full_content": false
+      },
+      "relevance_score": null,
+      "section_headers": [],
+      "language": "en"
+    }
+  ],
+  "content_results": [],
+  "synthesis": null,
+  "metadata": {
+    "depth": "quick",
+    "language": "en",
+    "synthesis_type": "summary",
+    "sources_analyzed": 0,
+    "total_sources_found": 3
+  }
+}
